@@ -1,0 +1,21 @@
+
+
+<form  class="container" (ngSubmit) = "onLogin()">
+
+  <h1>Welcome please login here</h1>
+    <div>
+      <label for="username" class="form-group">Username:</label>
+      <input type="text" class="form-control"  [(ngModel)] = "userName" name="userName">
+    </div>
+  
+    <div>
+      <label for="password" class="form-group">Password:</label>
+      <input type="password" [(ngModel)] = "password" class="form-control" name="password">
+    </div>
+  
+    <button type="submit"  class="btn btn-success">Login</button>
+    <p>if you Haven't register please register here </p>
+    <a routerLink="../register-user" routerLinkActive="active"  >Register</a>
+  </form>
+  <router-outlet></router-outlet>
+ 
